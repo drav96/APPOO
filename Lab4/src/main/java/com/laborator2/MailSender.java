@@ -8,7 +8,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
-class SendEmail {
+class MailSender {
 
     static void writeTo(String destinationEmail, String subject, String content) {
         // Recipient's email ID needs to be mentioned.
@@ -45,8 +45,10 @@ class SendEmail {
             message.setText(content);
 
             // Send message
-
             Transport.send(message);
+
+            System.out.println("Sent message successfully....");
+
         } catch (MessagingException mex) {
             mex.printStackTrace();
         }

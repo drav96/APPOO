@@ -8,12 +8,12 @@ import java.io.IOException;
 import java.io.Reader;
 
 
-public class CheckingMails {
+public class MailChecker {
 
     private String userName;
     private String userPassword;
 
-    public CheckingMails(String userName, String password) {
+    public MailChecker(String userName, String password) {
         this.userName = userName;
         this.userPassword = password;
     }
