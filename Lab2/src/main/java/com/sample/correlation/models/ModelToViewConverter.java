@@ -10,9 +10,9 @@ public class ModelToViewConverter extends Converter<double[], AirView> {
         AirView airView = new AirView();
         airView.setFlags(array[0]);
         airView.setCatalog(array[1]);
-        airView.setElevation(array[2]);
+        airView.setElevation(array[4]);
         airView.setFrequency(array[3]);
-        airView.setLength(array[4]);
+        airView.setLength(array[2]);
         ;
         return airView;
     }

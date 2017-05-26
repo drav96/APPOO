@@ -1,14 +1,20 @@
 package com.sample.correlation.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AirModel {
 
+    @JsonProperty("Flags")
     private int Flags;
+    @JsonProperty("Catalog")
     private int Catalog;
+    @JsonProperty("Length")
     private int Length;
+    @JsonProperty("Elevation")
     private int Elevation;
+    @JsonProperty("Frequency")
     private double Frequency;
 
 

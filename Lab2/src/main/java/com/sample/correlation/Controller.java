@@ -64,6 +64,7 @@ public class Controller implements Initializable {
             ObjectMapper objectMapper = new ObjectMapper();
             List<AirModel> list = objectMapper.readValue(jsonData, new TypeReference<List<AirModel>>() {
             });
+
             correlationTable.setItems(FXCollections.observableArrayList(CorrelationCalculator.getINSTANCE().
                     with(list).computeCorrelationMatrix()
                     .getOutList()));
